@@ -1,0 +1,65 @@
+/* Design CSS page for new registration form */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f7f7;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #f1f7f7;
+    padding: 10vh 15vw 10vh 15vw;
+    border-radius: 5px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #25715f;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Apply same styles to both input fields for shared configuration */
+input[type="text"], #feedback{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensure consistent width with padding and border */
+}
+
+/* Add placeholder-specific styles for individuality */
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+textarea::placeholder {
+    color: #999;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #25715f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #25715f;
+}
